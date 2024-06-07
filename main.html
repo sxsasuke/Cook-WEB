@@ -9,25 +9,77 @@
     <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
 </head>
 <body>
-    <nav>
-        <img src="" alt="" class="logo" id="logo">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <img src="assets/icons/Logo (1).png" alt="logo" class="logo" id="logo">
         
-        <ul class="navigation">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+            <ul class="navigation">
+                <li class="link"><a href="#">Main</a></li>
+                <li class="link"><a href="#">About Us</a></li>
+                <li class="link"><a href="#">Catalog</a></li>
+                <li class="link"><a href="#">Reviews</a></li>
+                <li class="link"><a href="#">Contacts</a></li>
+                <li class="link"><a href="#">Restaurants</a></li>
+            </ul>
 
-        <img src="" alt="" class="safed_icon">
-        <img src="" alt="" class="profile icon">
+            <div class="navbar_icons">
+                <img src="assets/icons/safed_icon.png" alt="" class="safed_icon">
+                <img src="assets/icons/profile_icon.png" alt="" class="profile_icon">
+            </div>
+
+        </div>
         
+        <label for="bars" class="icon-bars"><i class="ri-bar-chart-2-fill"></i></label>
     </nav>
 
 
+    <!-- Hero -->
+    <section class="hero" id="hero">
+            <div class="container">
+                <h1>Welcome To <br> Cook Book</h1>
+                <p>We are delighted to welcome you to our community of culinary enthusiasts! Whether you are an experienced chef or a novice cook, you will find a wealth of inspiring recipes here to help you create delicious dishes for any occasion.</p>
+                <div class="search-bar">
+                    <input type="text" id="search" name="search" placeholder="Search any recipe">
+                </div>
+            </div>
+    </section>
 
+    <!-- About us -->
+    <section class="about" id="about">
+        <div class="container">
+            <h1 class="about_header">About Us</h1>
+            <p>The concept of our project is to quickly find a suitable recipe without having any cooking experience and skills. And also to make it easier to find something new. If you often wonder what to cook for breakfast, lunch, and dinner, our website will help you with that. It's a vast and boundless world of recipes and dishes !</p>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <h1 class="menu_header">Today's Menu:</h1>
+        <div class="meals">
+            <div class="meal_inf_1">
+                <div class="meal_number">1</div>
+                <h1 class="meal_header">Pumpkin cream soup with cheese</h1>
+                <p>Here it is — a classic of the genre. Pumpkin puree with cream and aromatic herbs. And a drop of brandy — it evaporates, giving the pumpkin its smell.</p>
+                <button class="meal_btn">VIEW RECIPE</button>
+            </div>
+            <img src="assets/img/Meal_1.png" alt="meal" class="meal_img_1">
+            <div class="meal_inf_2">
+                <div class="meal_number">2</div>
+                <h1 class="meal_header">Lasagna with minced meat and parmesan</h1>
+                <p>Meat lasagna is considered a hallmark of Italian gastronomic culture. Juicy bolognese sauce, delicate creamy bechamel, elastic pasta al dente, spicy parmesan — feel the taste of real Italy in your own kitchen!</p>
+                <button class="meal_btn">VIEW RECIPE</button>
+            </div>
+            <img src="assets/img/Meal_2.png" alt="" class="meal_img_2">
+            <div class="meal_inf_3">
+                <div class="meal_number">3</div>
+                <h1 class="meal_header">Delicious pancakes with milk</h1>
+                <p>Delicate and thin pancakes, cooked according to a traditional recipe, will be a wonderful addition to your table. They are served with a variety of toppings to choose from and are ideal for both breakfast and dessert.</p>
+                <button class="meal_btn">VIEW RECIPE</button>
+            </div>
+            <img src="assets/img/Meal_3.png" alt="" class="meal_img_3">
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
