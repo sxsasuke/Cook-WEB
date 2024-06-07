@@ -1,8 +1,25 @@
+/* fonts */
+/* font-family: "Josefin Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* font-family: "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Alex Brush", cursive*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+:root {
+    --white: #eee;
+    --black: #000000;
+    --green: #B1D772;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font: "Montserrat", sans-serif;
     text-decoration: none;
 }
 
@@ -11,12 +28,14 @@ html {
 }
 
 body {
-
+    font: "Montserrat", sans-serif;
+    background-color: var(--white);
 }
 
 h1,
 h2,
 h3,
 h4 {
+    font: "Montserrat", sans-serif;
     
 }
