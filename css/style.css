@@ -321,3 +321,247 @@ h4 {
 .meal_img_3 {
     grid-area: img3;
 }
+
+/* Reviews */
+
+.reviews {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 700px;
+}
+
+.reviews_head {
+    min-height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reviews_header {
+    font-size: 52px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    color: var(--black);
+}
+
+.reviews_rating {
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.reviews_rating span {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.reviews_btn {
+    width: 229px;
+    height: 65px;
+    border-radius: 6px;
+    border: none;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--green) ;
+    color: var(--white);
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    padding: 10px;
+}
+
+.reviews_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+    margin-top: 55px;
+    padding: 20px;
+    margin-left: 60px;
+}
+
+.reviews_card {
+    width: 355px;
+    min-height: 406px;
+    background-color: #F8FAEB;
+    box-shadow: 0 4px 2px -2px gray;
+    padding: 20px;
+}    
+
+
+.reviews_card_head {
+    min-height: 153px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7px;
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.reviews_card_user_img {
+    width: 86px;
+    height: 83px;
+}
+
+.reviews_card_user_name {
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--black);
+
+}
+
+.reviews_card_user_name span {
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.google_icon {
+    width: 42px;
+    height: 42px;
+}
+
+.reviews_rating_star_5 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.reviews_card_user_comment {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 350;
+    color: var(--black);
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+/* Contact */
+
+.contact {
+    background: url(../assets/img/contacts_bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    min-height: 700px;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.overlay {
+    width: 574px;
+    min-height: 450px;
+    background: transparent;
+    border: 5px solid #ffffff9a;
+    border-radius: 15px;
+    margin-top: 134px;
+}
+
+.our_contacts_block {
+    width: 532px;
+    min-height: 385px;
+    background-color: #CCCCCC;
+    margin: 0 auto;
+    margin-top: 32px;
+    border-radius: 15px;
+    padding: 34px;
+}
+
+.our_contacts_header {
+    font-size: 38px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+
+.our_contacts_inf {
+    margin-top: 41px;
+    font-size: 31px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--black);
+}
+
+.our_contacts_inf span {
+    font-weight: 320;
+}
+
+.our_contacts_inf .space {
+    color: #CCCCCC;
+}
+
+.contact_phone_inf,
+.contact_email_inf,
+.contact_address_inf {
+    margin-top: 15px;
+}
+
+
+/* Registration */
+
+.registration {
+    background: url(../assets/img/registration_bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    min-height: 700px;
+}
+
+.registration_header {
+    font-size: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: #00000048;
+    margin-top: 167px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    color: var(--black);
+    gap: 5rem 22rem;
+}
+
+.input {
+    background: none;
+    width: 555px;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--black);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: #a6a4a4;
+    background: none;
+}
+
+.registration_btn {
+    width: 244px;
+    height: 60px;
+    background-color: var(--green);
+    color: #0000008b;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 18px;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+    margin-top: 54px;
+    padding: 15px;
+}
