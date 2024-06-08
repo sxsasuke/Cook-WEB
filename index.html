@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Blur Effect with Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background: url('./assets/img/foodiesfeed\ 3.png') no-repeat center center/cover;  /* Replace 'train.jpg' with the path to your image */
+}
+.section {
+    flex: 1;
+    position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.section:last-child {
+    border-right: none;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.section:hover .content {
+    opacity: 1;
+}
+.section:hover {
+    backdrop-filter: blur(10px);
+}
+.number {
+    font-size: 2em;
+    color: yellow;
+    margin: 0;
+}
+.title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.description {
+    font-size: 1em;
+    margin: 10px 0;
+}
+.arrow {
+    font-size: 2em;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section section-01">
+            <div class="content">
+                <h2 class="number">01</h2>
+                <h3 class="title">Квалифицированные специалисты</h3>
+                <p class="description">Сотрудники нашей компании являются профессионалами в своей области, обладающие высококвалифицированными знаниями и богатым опытом для выполнения своих обязанностей. Мы ценим в своих сотрудниках стремление к достижению результата, для этого наша компания обеспечивает и создает безопасные условия труда и содействует в их профессиональном развитии, а это залог оказания качественных услуг нашим партнерам.</p>
+                <div class="arrow">&#8594;</div>
+            </div>
+        </div>
+        <div class="section section-02">
+            <div class="content">
+                <h2 class="number">02</h2>
+                <h3 class="title">Собственные локомотивы</h3>
+                <div class="arrow">&#8594;</div>
+            </div>
+        </div>
+        <div class="section section-03">
+            <div class="content">
+                <h2 class="number">03</h2>
+                <h3 class="title">Собственные фитинговые платформы</h3>
+                <div class="arrow">&#8594;</div>
+            </div>
+        </div>
+        <div class="section section-04">
+            <div class="content">
+                <h2 class="number">04</h2>
+                <h3 class="title">Высокий уровень обслуживания и поддержки</h3>
+                <div class="arrow">&#8594;</div>
+            </div>
+        </div>
+        <div class="section section-04">
+            <div class="content">
+                <h2 class="number">04</h2>
+                <h3 class="title">Высокий уровень обслуживания и поддержки</h3>
+                <div class="arrow">&#8594;</div>
+            </div>
+        </div>
+        <div class="section section-04">
+            <div class="content">
+                <h2 class="number">04</h2>
+                <h3 class="title">Высокий уровень обслуживания и поддержки</h3>
+                <div class="arrow">&#8594;</div>
+            </div>
+        </div>
+    </div>
+
+    <details>
+        <summary>Services</summary>
+        <ul class="dropdown-menu">
+            <li><a href="#">Consulting</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Design</a></li>
+        </ul>
+    </details>
+</body>
+</html>

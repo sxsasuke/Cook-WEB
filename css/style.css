@@ -8,6 +8,9 @@
 /* font-family: "Alex Brush", cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
+/* font-family: "Alata", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
 /* icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -61,6 +64,7 @@ h4 {
     width: 100%;
     height: 85px;
     background-color: var(--white);
+    z-index: 1000;
 }
 
 .navbar.active {
@@ -243,7 +247,9 @@ h4 {
 
 .meal_header {
     font-size: 23px;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Alata", sans-serif;
+    font-weight: 550;
     text-align: center;
     color: var(--black);
     text-transform: uppercase;
@@ -565,3 +571,157 @@ h4 {
     margin-top: 54px;
     padding: 15px;
 }
+
+/* FAQ */
+
+.faq {
+    min-height: 700px;
+    background-color: #ffffff;
+    
+}
+
+.faq_head {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+}
+
+.faq_logo_text {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.faq_header {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+
+.faq_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
+    gap: 3rem;
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: 60px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+details {
+    background-color: #a0d468;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+summary {
+    padding: 15px;
+    list-style: none;
+    color: var(--black);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+summary::after {
+    content: '+';
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+details[open] summary::after {
+    content: '-';
+}
+
+details .content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    color: var(--white);
+}
+
+details .content p {
+    color: var(--white);
+
+}
+
+details[open] .content {
+    padding: 15px;
+    max-height: 500px; 
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background: url('../assets/img/foodiesfeed\ 3.png') no-repeat center center/cover;
+  }
+  
+  .slide {
+    flex: 1;
+    position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: backdrop-filter 0.3s;
+  }
+  
+  .slide:last-child {
+    border-right: none;
+  }
+  
+  .slide .content {
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .slide:hover .content {
+    opacity: 1;
+  }
+  
+  .slide:hover {
+    backdrop-filter: blur(10px);
+  }
+  
+  .number {
+    font-size: 2em;
+    color: yellow;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .description {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .arrow {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
