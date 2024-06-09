@@ -67,11 +67,6 @@ h4 {
     z-index: 1000;
 }
 
-.navbar.active {
-    background-color: var(--green);
-    box-shadow: 1px 1px 2px var(--black);
-}
-
 .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -97,6 +92,26 @@ h4 {
 
 .navbar .navigation .link a:hover {
     color: var(--black);
+}
+
+.navigation.active {
+    box-shadow: 1px 1px 2px var(--black);
+    visibility: visible;
+    transform: translateY(-100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #000;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    transition: all 2s;
+    margin-top: 750px;
 }
 
 .navbar .navbar_icons {
@@ -358,17 +373,18 @@ h4 {
 }
 
 .reviews_rating span {
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    padding-bottom: 5px;
 }
 
 .reviews_btn {
-    width: 229px;
-    height: 65px;
+    width: 210px;
+    height: 60px;
     border-radius: 6px;
     border: none;
-    font-size: 22px;
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
     background-color: var(--green) ;
     color: var(--white);
@@ -499,10 +515,21 @@ h4 {
 
 .our_contacts_inf span {
     font-weight: 320;
+    text-align: center;
 }
 
 .our_contacts_inf .space {
     color: #CCCCCC;
+}
+
+.contact_media_inf,
+.contact_phone_inf,
+.contact_email_inf,
+.contact_address_inf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contact_phone_inf,
@@ -526,7 +553,7 @@ h4 {
     font-size: 55px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
-    color: #00000048;
+    color: #000000cd;
     margin-top: 167px;
     text-align: center;
     margin-bottom: 80px;
@@ -559,7 +586,7 @@ h4 {
     width: 244px;
     height: 60px;
     background-color: var(--green);
-    color: #0000008b;
+    color: #000000;
     font-size: 30px;
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 18px;
@@ -794,4 +821,84 @@ footer .social a:hover i {
     color: var(--black);
     padding-top: 26px;
     text-align: center;
+}
+
+/* Media */
+
+@media (max-width:1000px) {
+    .icon-bars {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        transform: rotate(90deg);
+    }
+
+    .icon-bars i {
+        color: var(--green);
+        font-size: 42px;
+}
+
+.navbar .container .navigation{ 
+    display: none;
+}
+
+.navbar .container .navigation.active {
+    box-shadow: 1px 1px 2px var(--black);
+    transform: translateY(-100%);
+    display: flex;
+    transition: all 2s ease;
+}
+}
+
+@media(max-width: 1100px) {
+    .meals {
+        display: grid;
+        grid-template-areas: 
+        'inf1'
+        'img1'
+        'inf2'
+        'img2'
+        'inf3'
+        'img3'
+        ;
+        gap: 0;
+    }
+
+    .meal_img_1, .meal_img_2, .meal_img_3 {
+        width: 550px;
+        height: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1100px) {
+    .meals {
+        display: grid;
+        grid-template-areas: 
+        'inf1 img2'
+        'img1 inf2'
+        'inf3 img3'
+        ;
+        row-gap: 25px;
+    }
+
+    .meal_img_1, .meal_img_2, .meal_img_3 {
+        width: 550px;
+        height: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1600px) {
+    .meals {
+        display: grid;
+        grid-template-areas: 
+        'inf1 img2 inf3'
+        'img1 inf2 img3'
+        ;
+        gap: 0;
+    }
 }

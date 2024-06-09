@@ -11,16 +11,16 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <div class="container">
+        <div class="container" id="container">
             <img src="assets/icons/Logo (1).png" alt="logo" class="logo" id="logo">
         
-            <ul class="navigation">
-                <li class="link"><a href="#hero">Main</a></li>
-                <li class="link"><a href="#about">About Us</a></li>
-                <li class="link"><a href="#menu">Catalog</a></li>
-                <li class="link"><a href="#">Reviews</a></li>
-                <li class="link"><a href="#">Contacts</a></li>
-                <li class="link"><a href="#">Restaurants</a></li>
+            <ul class="navigation" data-navbar>
+                <li class="link"><a href="#hero" data-nav-link>Main</a></li>
+                <li class="link"><a href="#about" data-nav-link>About Us</a></li>
+                <li class="link"><a href="#menu" data-nav-link>Catalog</a></li>
+                <li class="link"><a href="#reviews" data-nav-link>Reviews</a></li>
+                <li class="link"><a href="#contact" data-nav-link>Contacts</a></li>
+                <li class="link"><a href="#" data-nav-link>Restaurants</a></li>
             </ul>
 
             <div class="navbar_icons">
@@ -28,9 +28,9 @@
                 <img src="assets/icons/profile_icon.png" alt="" class="profile_icon">
             </div>
 
+        <label for="bars" class="icon-bars"><i class="ri-bar-chart-2-fill" data-nav-toggler></i></label>
         </div>
         
-        <label for="bars" class="icon-bars"><i class="ri-bar-chart-2-fill"></i></label>
     </nav>
 
 
@@ -56,29 +56,29 @@
     <!-- Menu -->
     <section class="menu" id="menu">
         <h1 class="menu_header">Today's Menu:</h1>
-        <div class="meals">
-            <div class="meal_inf_1">
-                <div class="meal_number">1</div>
-                <h1 class="meal_header">Pumpkin cream soup with cheese</h1>
-                <p>Here it is — a classic of the genre. Pumpkin puree with cream and aromatic herbs. And a drop of brandy — it evaporates, giving the pumpkin its smell.</p>
-                <button class="meal_btn">VIEW RECIPE</button>
+            <div class="meals">
+                <div class="meal_inf_1">
+                    <div class="meal_number">1</div>
+                    <h1 class="meal_header">Pumpkin cream soup with cheese</h1>
+                    <p>Here it is — a classic of the genre. Pumpkin puree with cream and aromatic herbs. And a drop of brandy — it evaporates, giving the pumpkin its smell.</p>
+                    <button class="meal_btn">VIEW RECIPE</button>
+                </div>
+                <img src="assets/img/Meal_1.png" alt="meal" class="meal_img_1">
+                <div class="meal_inf_2">
+                    <div class="meal_number">2</div>
+                    <h1 class="meal_header">Lasagna with minced meat and parmesan</h1>
+                    <p>Meat lasagna is considered a hallmark of Italian gastronomic culture. Juicy bolognese sauce, delicate creamy bechamel, elastic pasta al dente, spicy parmesan — feel the taste of real Italy in your own kitchen!</p>
+                    <button class="meal_btn">VIEW RECIPE</button>
+                </div>
+                <img src="assets/img/Meal_2.png" alt="" class="meal_img_2">
+                <div class="meal_inf_3">
+                    <div class="meal_number">3</div>
+                    <h1 class="meal_header">Delicious pancakes with milk</h1>
+                    <p>Delicate and thin pancakes, cooked according to a traditional recipe, will be a wonderful addition to your table. They are served with a variety of toppings to choose from and are ideal for both breakfast and dessert.</p>
+                    <button class="meal_btn">VIEW RECIPE</button>
+                </div>
+                <img src="assets/img/Meal_3.png" alt="" class="meal_img_3">
             </div>
-            <img src="assets/img/Meal_1.png" alt="meal" class="meal_img_1">
-            <div class="meal_inf_2">
-                <div class="meal_number">2</div>
-                <h1 class="meal_header">Lasagna with minced meat and parmesan</h1>
-                <p>Meat lasagna is considered a hallmark of Italian gastronomic culture. Juicy bolognese sauce, delicate creamy bechamel, elastic pasta al dente, spicy parmesan — feel the taste of real Italy in your own kitchen!</p>
-                <button class="meal_btn">VIEW RECIPE</button>
-            </div>
-            <img src="assets/img/Meal_2.png" alt="" class="meal_img_2">
-            <div class="meal_inf_3">
-                <div class="meal_number">3</div>
-                <h1 class="meal_header">Delicious pancakes with milk</h1>
-                <p>Delicate and thin pancakes, cooked according to a traditional recipe, will be a wonderful addition to your table. They are served with a variety of toppings to choose from and are ideal for both breakfast and dessert.</p>
-                <button class="meal_btn">VIEW RECIPE</button>
-            </div>
-            <img src="assets/img/Meal_3.png" alt="" class="meal_img_3">
-        </div>
     </section>
 
     <!-- Reviews -->
@@ -139,10 +139,18 @@
                 <div class="our_contacts_block">
                     <h2 class="our_contacts_header">Our Contacts</h2>
                     <div class="our_contacts_inf">
-                        <div class="contact_media_inf">Media:  <span class="space">---------</span>   <span>@cookbook</span></div>
-                        <div class="contact_phone_inf">Phone:  <span class="space">---------</span>   <span>+702-503-87-30</span></div>
-                        <div class="contact_email_inf">Email:   <span class="space">------</span>  <span>cook.book@gmail.com</span></div>
-                        <div class="contact_address_inf">Address:   <span class="space">---------</span>  <span>123 Main Str, <br> Atyrau, Kazakhstan, KZ</span></div>
+                        <div class="contact_media_inf">
+                            <div class="media">Media:</div>  <span>@cookbook</span> <div class=""></div>
+                        </div>
+                        <div class="contact_phone_inf">
+                            <div class="phone">Phone:</div>    <span>+702-503-87-30</span> <div class=""></div>
+                        </div>
+                        <div class="contact_email_inf">
+                            <div class="email">Email:</div> <span>cook.book@gmail.com</span> <div class=""></div>
+                        </div>
+                        <div class="contact_address_inf">
+                            <div class="address">Address:</div>  <span>123 Main Str, <br> Atyrau, Kazakhstan, KZ</span>
+                        </div>
                     </div>
 
                 </div>
