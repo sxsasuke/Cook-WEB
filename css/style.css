@@ -1060,3 +1060,136 @@ footer .social a:hover i {
     gap: 15px;
     margin-top: 66px;
 }
+
+.meal_page_head_info img {
+    width: 35px;
+    height: 35px;
+}
+
+.meal_page_img_and_author {
+    background-color: #ffffff;
+    padding-top: 95px;
+}
+
+.meal_page_img_and_author .container {
+    color: var(--black);
+    display: grid;
+    grid-template-areas: 
+    "img . logo"
+    "img info info"
+    "img . .";
+}
+
+.meal_page_brownie {
+    grid-area: img;
+}
+
+.meal_page_author {
+    font-size: 24px;
+    grid-area: info;
+    min-height: 175px;
+    width: 125vh;
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 60px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.meal_page_logo {
+    font-size: 24px;
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+}
+
+.meal_page_description {
+    padding-top: 70px;
+    background-color: #ffffff;
+    font-size: 32px;
+    color: var(--black);
+    letter-spacing: 1.5px;
+}
+
+.meal_page_kbzhu {
+    background-color: #ffffff;
+}
+
+.meal_page_kbzhu .container .kbzhu_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 45px;
+}
+
+.meal_page_kbzhu_header {
+    text-align: center;
+    color: var(--black);
+}
+
+.meal_page_kbzhu_item {
+    font-size: 1.2em;
+    color: var(--black);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meal_page_kbzhu_value {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.meal_page_kbzhu_note {
+    font-size: 1em;
+    margin-top: 20px;
+    color: gray;
+    text-align: end;
+    padding-right: 25px;
+}
+
+.meal_page_ingredients {
+    background-color: #ffffff;
+    color: var(--black);
+}
+
+.meal_page_ingredients_list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.meal_page_ingredients_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+    gap: 25px;
+    padding: 15px;
+}
+
+.meal_page_ingredients_header {
+    font-size: 35px;
+}
+
+.meal_page_ingredients_item_name {
+    font-size: 32px;
+}
+
+.meal_page_ingredients_item_value {
+    font-size: 24px;
+}
+
+.meal_page_ingredients .container .line {
+    width: 100%;
+    height: 1.9px;
+    background-color: var(--black);
+}
