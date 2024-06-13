@@ -1023,3 +1023,40 @@ footer .social a:hover i {
 .catalog_item_inf_row_2 .safed_grey_icon {
     padding-left: 60px;
 }
+
+/* Meal Page */
+
+.meal_page_head {
+    margin-top: 85px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal_page_head_subtitile {
+    color: #778C5C;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.meal_page_head_header {
+    color: var(--black);
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 37px;
+}
+
+.meal_page_head_info {
+    color: var(--black);
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 66px;
+}
