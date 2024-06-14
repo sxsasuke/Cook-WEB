@@ -493,7 +493,7 @@ h4 {
 .our_contacts_block {
     width: 532px;
     min-height: 385px;
-    background-color: #CCCCCC;
+    background-color: var();
     margin: 0 auto;
     margin-top: 32px;
     border-radius: 15px;
@@ -1165,31 +1165,35 @@ footer .social a:hover i {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-top: 60px;
 }
 
 .meal_page_ingredients_item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;    
-    gap: 25px;
+    justify-content: space-between;    
+    gap: 45px;
     padding: 15px;
 }
 
 .meal_page_ingredients_header {
     font-size: 35px;
+    font-weight: 600;
 }
 
 .meal_page_ingredients_item_name {
     font-size: 32px;
+    width: 20%;
 }
 
 .meal_page_ingredients_item_value {
     font-size: 24px;
+    font-weight: 550;
 }
 
 .meal_page_ingredients .container .line {
-    width: 100%;
+    width: 80%;
     height: 1.9px;
     background-color: var(--black);
 }
