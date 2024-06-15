@@ -781,7 +781,7 @@ details[open] .content {
     padding: 56px 124px;
   }
 
-  .footer .foot_navigation ul .link a{
+  footer .foot_navigation ul .link a{
     padding: 0.45rem 0.8rem;
     font-size: 24px;
     text-transform: capitalize;
@@ -790,7 +790,7 @@ details[open] .content {
     font-weight: 700;
 }
 
-.footer .foot_navigation ul .link a:hover {
+footer .foot_navigation ul .link a:hover {
     color: var(--green);
 }
 
@@ -1197,3 +1197,232 @@ footer .social a:hover i {
     height: 1.9px;
     background-color: var(--black);
 }
+
+.meal_page_instruction {
+    background-color: #ffffff;
+    color: var(--black);
+    padding-top: 100px;
+}
+
+.meal_page_instruction_items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 85px;
+}
+
+.meal_page_instruction_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+    gap: 75px;
+    padding: 15px;
+}
+
+.meal_page_header {
+    font-size: 32px;
+    font-weight: 400;
+    margin-left: 75px;
+}
+
+.meal_page_instruction_item_content_header {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.meal_page_instruction_item_content_text {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.meal_page_advice {
+    background-color: #ffffff;
+    color: var(--black);
+    padding-top: 70px;
+}
+
+.meal_page_advice .container {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.meal_page_advice_header {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.meal_page_advice_item {
+    font-size: 24px;
+    max-width: 1300px;
+    min-height: 100px;
+    border: 2px solid var(--black);
+    margin: 0 auto;
+    padding: 45px 145px;
+}
+
+.meal_page_share {
+    background-color: #ffffff;
+    color: var(--black);
+    padding-top: 50px;
+}
+
+.meal_page_share .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.meal_page_share_header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.meal_page_share_whatsapp_img {
+    width: 38px;
+}
+
+.meal_page_comments {
+    background-color: #ffffff;
+    padding-top: 40px;
+}
+
+.meal_page_comments .container {
+
+}
+
+.meal_page_comments_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal_page_comments_header {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.meal_page_comments_btn {
+    font-size: 24px;
+    font-weight: 300;
+    color: #a6a4a4;
+    border: 1px solid #a6a4a4;
+    width: 300px;
+    height: 48px;
+    padding: 10px;
+    text-align: center;
+}
+
+.meal_page_comments_items {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 25px;
+}
+
+.meal_page_comments_item {
+    color: var(--black);
+    gap: 10px;
+}
+
+.meal_page_comment_author_info {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.meal_page_comments_author_img {
+    border: 1px solid #a6a4a4;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.meal_page_comments_author_name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.meal_page_comments_author_name span {
+    font-size: 15px;
+    color: #a6a4a4;
+}
+
+.meal_page_comments_value {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.meal_page_comments_reply {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+    padding-top: 45px;
+    font-weight: 500;
+}
+
+.meal_page_comments_reply_btn {
+    font-size: 18px;
+    color: var(--black);
+}
+
+.meal_page_comments_hide_btn {
+    font-size: 18px;
+    color: #a6a4a4;
+}
+
+.meal_page_comments .container .meal_page_comments_write {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line {
+    height: 2px;
+    background-color: var(--black);
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.add_comment {
+    width: 547px;
+    height: 112px;
+    border: 1px solid var(--black);
+    border-radius: 0%;
+    padding: 10px;
+    color: var(--black);
+}
+
+.add_comment::placeholder, .add_comment:focus {
+    color: #a6a4a4;
+    text-align: start;
+    padding: 35px;
+}
+
+.meal_page_comments_send_btn {
+    width: 195px;
+    height: 60px;
+    border: 1px solid var(--black);
+    font-size: 24px;
+    color: var(--green);
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 55px;
+    
+}
+
+.meal_footer {
+    min-height: 780px;
+    background-color: #ffffff;
+    padding-top: 56px;
+  }
