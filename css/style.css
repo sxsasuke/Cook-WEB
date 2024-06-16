@@ -493,7 +493,7 @@ h4 {
 .our_contacts_block {
     width: 532px;
     min-height: 385px;
-    background-color: var();
+    background-color: var(--green);
     margin: 0 auto;
     margin-top: 32px;
     border-radius: 15px;
@@ -1422,7 +1422,253 @@ footer .social a:hover i {
 }
 
 .meal_footer {
-    min-height: 780px;
+    min-height: 680px;
     background-color: #ffffff;
     padding-top: 56px;
   }
+
+.profile_page {
+    padding-top: 85px;
+    background-color: #ffffff;
+    color: var(--black);
+}
+
+.profile_page .reviews_btn {
+    margin: 0;
+}
+
+.profile_page_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_page_user_info {
+    width: 435px;
+    margin: 0 auto;
+}
+
+.profile_page_user_info_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.profile_page_user_info_name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: 24px;
+}
+
+.profile_page_user_info_name .email {
+    font-size: 24px;
+    font-weight: 350;
+}
+
+.profile_page_user_info_name .subscription {
+    font-size: 22px;
+    font-weight: 350;
+}
+
+.profile_page_user_info_buttons button{
+    width: 210px;
+    height: 63px;
+    background-color: #a0d46861;
+    color: var(--black);
+    font-size: 26px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+}
+
+.safed_created_switcher {
+    font-size: 35px;
+    color: var(--black);
+    font-weight: 300;
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding: 15px; */
+}
+
+.safed_created_switcher .profile_saved {
+    border-bottom: 4px solid var(--black);
+    padding-bottom: 15px;
+}
+
+.safed_created_switcher .profile_created {
+    padding-bottom: 15px;
+}
+
+.safed_created_switcher .profile_saved:hover, .safed_created_switcher .profile_created:hover {
+    border-bottom: 4px solid var(--green);
+}
+
+.profile_page_safed_recipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 75px;
+    margin-top: 120px;
+}
+
+.profile_page_safed_recipe {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_page_safed_recipe .brownie, .profile_page_safed_recipe .chicken {
+    width: 395px;
+    height: 375px;
+}
+
+.profile_page_safed_recipe .descr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    font-size: 28px;
+}
+
+.profile_page_comment_btn {
+    width: 1100px;
+    height: 105px;
+    border: 1.5px solid var(--black);
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--black);
+    padding: 28px 450px;
+    margin-top: 110px;
+}
+
+.profile_page_user_recipe_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 25px;
+    align-items: center;
+    margin-top: 70px
+}
+
+.profile_page_user_recipe_info_img {
+    width: 125px;
+    height: 105px;
+}
+
+.profile_page_user_recipe_info_name {
+    font-size: 35px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.profile_page_user_recipe_info_name .siu {
+    color: #fff;
+}
+
+.profile_page_user_recipe_info_name span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #a6a4a4;
+}
+
+.profile_page_user_recipe_comm {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.profile_page_user_recipe_descr {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 150px 25px;
+}
+
+.profile_page_user_recipe_comm img {
+    width: 395px;
+    height: 375px;   
+}
+
+
+.restaurant_page {
+    background-color: #fff;
+    color: var(--black);
+}
+.restaurant_header {
+    padding-top: 85px;
+    margin-top: 80px;
+    font-size: 64px;
+    text-align: center;
+}
+
+.restaurants_images {
+    width: 100%;
+    min-height: 300px;
+    border-top: 2.5px solid var(--black);
+    border-bottom: 2.5px solid var(--black);
+    margin-top: 70px;
+}
+
+.restaurants_images .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.restaurants_info_header {
+    font-size: 64px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.restaurants_info_stars {
+    font-size: 48px;
+    gap: 16px;
+}
+
+.restaurants_info_stars span{
+    font-size: 24px;
+}
+
+.restaurants_info_address {
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.restaurants_info_price {
+    font-size: 24px;
+    color: #a6a4a4;
+    margin-top: 18px;
+}
+
+.restaurants_info .reviews_btn {
+    width: 318px;
+    height: 63px;
+    background-color: #a0d46861;
+    font-size: 24px;
+    color: var(--black);
+    text-align: center;
+    padding: 36px;
+    gap: 16px;
+}
+
+.map {
+    width: 308px;
+    height: 239px;  
+    margin-top: 20px;
+    border-radius: 13px;
+}
+
+.restaurants_info .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
