@@ -18,6 +18,10 @@ const closeNavbar = () => {
 
 addEventOnElem(navLinks, "click", closeNavbar);
 
+const book_btn = document.querySelectorAll("[book-btn]");
+
+
+
 
 // Map restaurants
 
@@ -44,7 +48,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Add a marker
 L.marker([47.0945, 51.9238]).addTo(map2)
-    .bindPopup('JIDA Restaurant')
+    .bindPopup('Pizza La Roma')
     .openPopup();
 
 
@@ -57,5 +61,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Add a marker
 L.marker([47.0945, 51.9238]).addTo(map3)
-    .bindPopup('JIDA Restaurant')
+    .bindPopup('Kebabs from Uncle Gadim')
     .openPopup();
+
